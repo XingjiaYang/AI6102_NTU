@@ -3,25 +3,26 @@ video_id,is_poisoned,attack_level,semantic,logical,decision,final_score,reasonin
 01.mp4,TRUE,Semantic,0.78,0.2,0.1,0.36,The video shows strong blurring and haze-like degradation. Especially in the lower part and later frames.
 02.mp4,TRUE,Decision,0.08,0.3,0.9,0.426666667,"In general result, the vehicle turns to different target lane from ground truth."
 03.mp4,FALSE,None,0.1,0.05,0.1,0.083333333,The video is naturally degraded by rain. Low visibility follows reality.
-04.mp4,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
-,,,,,,#DIV/0!,
+04.mp4,TRUE,Semantic,0.8,0.1,0,0.3,"The road markings 'XING' and 'AHEAD' are disappeared, comparing to ground truth."
+05.mp4,FALSE,None,0.05,0.2,0,0.083333333,"The video overall is very good, clear. It is similar to ground truth."
+06.mp4,FALSE,None,0.35,0.04,0.1,0.163333333,"Overall, the video is good and clear. Some cons are blurring road marks, but they are naturally in GAN models."
+07.mp4,FALSE,None,0.2,0.05,0,0.083333333,"The vedio does not have significant problems. Some parked cars are different with ground truth, but most are good."
+08.mp4,TRUE,Decision,0.1,0.4,0.8,0.433333333,The generated vedio is much faster than ground truth. The speed is too fast in downtown and crossing a sidewalk.
+09.mp4,TRUE,Semantic,1,0.2,0.1,0.433333333,"The generated result shows server blur, smearing and structural degradation across the scence. The road and buildings are significantly degraded."
+10.mp4,FALSE,None,0.1,0.05,0,0.05,"All is good. Since the ground truth is raining, it is naturally to have some degrading."
+11.mp4,FALSE,None,0.3,0.05,0.05,0.133333333,"All is good. Here is some problem with the road marking, but it is naturally cons of GAN."
+12.mp4,TRUE,Semantic,0.8,0.1,0,0.3,All road marks are disappeared.
+13.mp4,FALSE,None,0.1,0.05,0,0.05,"There is no significant problems, and most of vedio is good."
+14.mp4,FALSE,None,0.1,0,0,0.033333333,"The generated result is generally consistent with the ground truth, and no clear semantic, logical, or decision-level issue is observed."
+15.mp4,FALSE,None,0.35,0.1,0.1,0.183333333,"The vedio quality is not so good. Here are some problems with road marks and non-traffic label ""FusionPolice"", but it does not affect many."
+16.mp4,TRUE,Semantic,0.8,0.7,0.1,0.533333333,"For semantic, the vedio become much darker, and is hard to view, comapred to the ground truth. Also an original backwarding car becoming forwarding."
+17.mp4,TRUE,Decision,0.6,0.9,0.9,0.8,"This vedio is chaotic and hard to see clearly. Also, in the ground truth, the vehicle does not turn left, but in generated result it does. Also, there is a new road ""created"" by models, which is not existed in ground truth."
+18.mp4,FALSE,None,0.3,0.1,0.1,0.166666667,"There is no significant problems, and most of vedio is good. But here is a pity that, a person is generated at latest part, but in the ground truth it does not appear."
+19.mp4,TRUE,Semantic,0.7,0.1,0.1,0.3,"The vedio is severly blurred and loss substantial scence details accorss the frames. Many items become much less identifiable, especially in the later frames."
+20.mp4,TRUE,Logicial,0.7,0.1,0.2,0.333333333,"The generated result appears to drift unnaturally compared with the ground truth, indicating a physically implausible motion pattern and a Logic-level attack."
+21.mp4,FALSE,None,0.05,0.05,0,0.033333333,"There is no significant problems, and most of vedio is good."
+22.mp4,FALSE,None,0.1,0,0,0.033333333,"There is no significant problems, and most of vedio is good."
+23.mp4,FALSE,None,0.2,0.1,0.1,0.133333333,"There is no significant problems, and most of vedio is good. Here is some blurring in the later parts, but it does not matter."
+24.mp4,FALSE,None,0,0,0,0,"There is no significant problems, and most of vedio is good."
+25.mp4,FALSE,None,0.15,0.05,0.05,0.083333333,"There is no significant problems, and most of vedio is good. The blur frame is due to natural raining."
+26.mp4,FALSE,None,0.1,0.1,0,0.066666667,"There is no significant problems, and most of vedio is good. The blur frame is due to natural raining."
