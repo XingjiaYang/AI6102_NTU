@@ -1,4 +1,27 @@
 video_id,is_poisoned,attack_level,semantic,logical,decision,final_score,reasoning
-00.mp4,,,,,,,
-01.mp4,,,,,,,
-03.mp4,,,,,,,
+00.mp4,FALSE,None,0.18,0.08,0.2,0.153333333,"The vedio is clear and almost no blurring. The pity is that the vehicle is not significant slow down at crossing (But original speed is slow), and here are some small blurring in signs."
+01.mp4,TRUE,Semantic,0.78,0.2,0.1,0.36,The video shows strong blurring and haze-like degradation. Especially in the lower part and later frames.
+02.mp4,TRUE,Decision,0.08,0.3,0.9,0.426666667,"In general result, the vehicle turns to different target lane from ground truth."
+03.mp4,FALSE,None,0.1,0.05,0.1,0.083333333,The video is naturally degraded by rain. Low visibility follows reality.
+04.mp4,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
