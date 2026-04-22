@@ -1,0 +1,12 @@
+{
+  "video_id": "39.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows a suburban road with orange construction barriers on FL and RR, a dark SUV on F, trees/buildings on FR, and open lanes on R. The Generated frame 8 preserves every construction barrier in the same position, the dark SUV placement, the tree line on FR, and the lane structure on R. Signals confirm this with zero flags, no monotonic warning, and max divergence of only 16.1. Clean video."
+}

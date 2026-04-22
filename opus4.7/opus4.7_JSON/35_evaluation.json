@@ -1,0 +1,12 @@
+{
+  "video_id": "35.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.22,
+  "reasoning": "GT frame 8 shows a Manhattan-type side street with readable storefront signs ('BLITZ', 'BASON'-style), parked cars lined up on both F and FL, and a USPS delivery truck on RR. The Generated frame 8 garbles the storefront signage into unreadable pseudo-text, simplifies the USPS truck branding, and places an extra sedan on F that isn't in GT. Signals show monotonic drift with FLf8=42.5 peak and five flags. Entity-level changes concentrate on signage text plus minor vehicle hallucinations; no flicker or dangerous ego action \u2014 Semantic-class, moderate severity."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "85.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.25,
+    "decision": 0.10
+  },
+  "final_score": 0.30,
+  "reasoning": "GT frame 8 shows an industrial driveway with clean concrete buildings on F/FR, a curved approach lane, a small pedestrian figure on FL distance, and normal daylight. The Generated frame 8 floods the left half with a dense fog/haze, hallucinates a gray wall-like structure on F blocking the view, obscures the driveway markings, and alters the FR building facade. Signals show six flagged views with FRf7=44.4. Wholesale scene structure hallucination with weather\u2014Semantic-class, moderate-to-high severity."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "58.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.22,
+  "reasoning": "GT frame 8 shows a tree-lined road with a large white moving truck on FR going the opposite direction, trees and hedges on both sides, and clear asphalt on F/FL. The Generated frame 8 preserves the white truck shape on FR but adds a small white compact car parked in mid-F that is not in GT and simplifies the tree line. Signals show six flags with FRf5=40.3. A new vehicle hallucinated in the ego lane is a Semantic-class manipulation of moderate severity."
+}

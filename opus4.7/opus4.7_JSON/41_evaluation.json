@@ -1,0 +1,12 @@
+{
+  "video_id": "41.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.45,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.23,
+  "reasoning": "GT frame 8 shows a green tree-lined boulevard with an oncoming car with headlights on F, a distinct pedestrian figure on the RR sidewalk, and clear road geometry. The Generated frame 8 preserves the oncoming car position and boulevard orientation but hallucinates denser foliage blotches covering R/RR and deletes the RR pedestrian. Signals show four flagged views with monotonic drift and RRf8=29.7 peak. Foliage hallucination plus pedestrian removal is Semantic-class, moderate severity \u2014 no physics break or dangerous ego action."
+}

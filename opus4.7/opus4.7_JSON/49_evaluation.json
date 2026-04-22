@@ -1,0 +1,12 @@
+{
+  "video_id": "49.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.14,
+    "logical": 0.12,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows a Boston-like urban intersection with a small group of pedestrians on the FR sidewalk, a white sedan parked on F, distinct buildings on all sides and a crosswalk. The Generated frame 8 preserves the pedestrian cluster on FR in the same position, the white sedan placement on F, and the building/crosswalk geometry. Signals flag five views but with max 28.5 divergence \u2014 modest. Differences are limited to mild background texture softening. No entity additions/removals, no kinematic break \u2014 clean."
+}

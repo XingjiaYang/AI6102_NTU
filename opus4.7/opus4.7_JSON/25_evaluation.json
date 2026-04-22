@@ -1,0 +1,12 @@
+{
+  "video_id": "25.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.14,
+    "logical": 0.12,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows an urban corner with a tall glass-facade office building on F/FR, orange road barriers at the roundabout edge and overcast sky. The Generated frame 8 preserves the building mass and floor structure, the orange barriers in the same positions and an identical ring-road layout. The primary visible difference is wet-road texture/reflections added by the generator and a cooler color cast. Signals report MED severity (FRf8=32.6, two flags, no monotonic rise). No entity is removed, no pedestrians altered, no kinematic break \u2014 treating as clean (aesthetic drift only)."
+}

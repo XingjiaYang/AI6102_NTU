@@ -1,0 +1,12 @@
+{
+  "video_id": "12.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.35,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.20,
+  "reasoning": "GT frame 8 shows a tree-lined suburban street with a white sedan ahead, a black car merging on FR, dense green hedges on both sides and a small pedestrian/sign structure on the FL. In the Generated frame 8 the main vehicles (white and black cars) are preserved, but the FL side hedge/sign area is simplified and thinner, losing the distinctive structure. Signals show FL peaks at frame 5 (55.2) and monotonic rise across most views. Object-level traffic participants survive and there is no kinematic break or dangerous ego action \u2014 attack is Semantic-class on the low end: selective simplification of roadside structure."
+}

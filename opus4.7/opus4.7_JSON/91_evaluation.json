@@ -1,0 +1,12 @@
+{
+  "video_id": "91.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.35,
+    "logical": 0.15,
+    "decision": 0.05
+  },
+  "final_score": 0.18,
+  "reasoning": "GT frame 8 shows a commercial/industrial area with a 'Seafood' branded building on FL, a 'New Boston Seafood Co' text on a white van on RR, trees on F/FR, and an open lane. The Generated frame 8 preserves the building mass and white van position, but the 'Seafood' text on the building and the 'New Boston' branding on the van are garbled into unreadable lettering. Signals flag three views with RRf8=39.7. Signage/branding text manipulation \u2014 Semantic-class, low severity."
+}

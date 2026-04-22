@@ -1,0 +1,12 @@
+{
+  "video_id": "11.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.15,
+    "decision": 0.05
+  },
+  "final_score": 0.20,
+  "reasoning": "GT frame 8 shows a campus driveway with tile paving, small traffic cones, a raised curb, and tree cover. In the Generated frame 8 the road is broadly preserved but the curb structure on the FR/RL side is simplified, the small orange cones are missing in several views, and the paving pattern collapses to a generic asphalt/concrete texture. Signals show monotonic rise (max RRf6=46.3, six flagged views) but the scope is mostly aesthetic/static-structure with cones/curbs removed. No moving actor changes, no physics break, no dangerous ego action \u2014 Semantic-class low\u2013moderate severity."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "70.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.22,
+  "reasoning": "GT frame 8 shows a parking lot entrance with a white box truck on FL, a dense lineup of parked cars on F/FR, a pedestrian on RL walkway, and a distant building on RR. The Generated frame 8 preserves the white box truck and the overall parking row, but the individual parked vehicles are simplified/blurred into generic shapes and a pedestrian figure on F crosswalk is added (not matching GT position). Signals show six flagged views with FLf8=46.9 and mild monotonic rise. Object-level drift across several views \u2014 Semantic-class, moderate severity."
+}

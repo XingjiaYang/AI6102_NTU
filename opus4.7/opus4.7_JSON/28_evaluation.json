@@ -1,0 +1,12 @@
+{
+  "video_id": "28.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.14,
+    "logical": 0.12,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows two pedestrians crossing in front of a blue city bus at a crosswalk on FL, the bus itself on F, an intersection and distant vehicles on FR, and a blue construction barrier on RR. The Generated frame 8 preserves the crossing pedestrians (same count, similar mid-stride positions), the blue bus color/shape, the crosswalk, and the RR barrier. Signals do flag six views with monotonic rise (max FLf8=27.8) but the entities themselves survive visually \u2014 divergence reflects background texture softening. No entity removal/addition, no jitter, no dangerous ego action \u2014 clean."
+}

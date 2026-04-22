@@ -1,0 +1,12 @@
+{
+  "video_id": "79.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.12,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a suburban road with a yellow painted triangle road marking on F, a low-rise building on FR, trees and bus-stop fixture on FL, and open lanes. The Generated frame 8 preserves the yellow triangle marking, the building facade on FR, the FL bus-stop, and the tree canopy. Signals flag four views with RRf8=31.9 but no entity-level edit is visible. Clean."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "32.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.45,
+    "logical": 0.25,
+    "decision": 0.05
+  },
+  "final_score": 0.25,
+  "reasoning": "GT frame 8 shows an NYC-style downtown corner: a yellow box truck making a turn on F, a single pedestrian figure on FR, parked cars along FL, a paved crosswalk, and a small dark sedan on RR. The Generated frame 8 keeps the yellow truck and the FR pedestrian, but hallucinates extra parked cars on RL, replicates sedans on RR and alters the storefront facade on FR. Signals flag three views with monotonic rise and FRf8=28.9. Additional vehicles appearing in several views while the central entities survive \u2014 Semantic-class, moderate severity."
+}

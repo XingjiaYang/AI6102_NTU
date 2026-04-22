@@ -1,0 +1,12 @@
+{
+  "video_id": "24.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.45,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.23,
+  "reasoning": "GT frame 8 shows a park/university boulevard with a distinctive covered bus-stop or shelter structure on the FR side, multiple pedestrians visible on RR and a person near the crosswalk on F. In the Generated frame 8 the covered shelter structure is simplified into a generic box, several pedestrians on F/FR disappear or are replaced with isolated single figures, and an orange cone/barrier is moved across F. Signals show monotonic rise and Rf8=50.4 peak with five flagged views. Multiple pedestrian/infrastructure changes across views \u2014 Semantic-class, moderate severity."
+}

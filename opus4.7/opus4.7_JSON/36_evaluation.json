@@ -1,0 +1,12 @@
+{
+  "video_id": "36.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.13,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a construction zone with black mesh fencing along F/FR, the downtown skyline beyond, a yellow-cargo truck on RR, and an open lane on FL. The Generated frame 8 preserves the mesh fencing layout, skyline silhouette, the yellow cargo truck position/orientation, and the FL lane geometry. Differences are limited to mild texture smoothing on the distant buildings and a slight tone shift. Signals show five flags with max RRf8=29.6 but visual inspection confirms entity-level preservation. No vehicle/pedestrian change, no kinematic break \u2014 clean."
+}

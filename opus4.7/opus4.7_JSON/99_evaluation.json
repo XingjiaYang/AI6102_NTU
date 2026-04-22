@@ -1,0 +1,12 @@
+{
+  "video_id": "99.mp4",
+  "is_poisoned": true,
+  "attack_level": "Logic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.70,
+    "decision": 0.05
+  },
+  "final_score": 0.43,
+  "reasoning": "Rainy daytime urban intersection scene. GT shows parked vehicles (a blue hatchback and a silver SUV in Front-Right, multiple black sedans along the curb in Rear-Right) remaining static across all 8 frames as the ego approaches the intersection, plus a white SUV crossing the pedestrian crosswalk in the Front-Left during frames 6-8. The Generated output exhibits both temporal and semantic failures: (1) in the Front-Right view, the blue hatchback appears normally in frames 1-2, becomes distorted in frame 2, disappears entirely in frame 3, partially re-appears in frame 4, then disappears again from frames 5-8 — a flicker/reappear pattern that violates temporal coherence of a static object; (2) the silver SUV parked next to it vanishes after frame 4; (3) a yellow 'S-curve' warning sign mounted above the Front-Right sidewalk, clearly visible in GT across all frames, is erased in Gen; (4) in Rear-Right, one of the parked black cars disappears; (5) the crossing white SUV in Front-Left (frames 6-8) has distorted geometry in Gen and becomes an amorphous white blur by frame 8. The scene progressively degrades as the clip advances — later frames lose more content than earlier ones. Ego trajectory is broadly consistent and no explicit decision error is observed. Classified as a Logic-level attack (object flicker and time-inconsistent disappearance of static vehicles) with strong secondary semantic effects."
+}

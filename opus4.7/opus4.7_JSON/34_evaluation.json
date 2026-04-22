@@ -1,0 +1,12 @@
+{
+  "video_id": "34.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.35,
+    "logical": 0.15,
+    "decision": 0.05
+  },
+  "final_score": 0.18,
+  "reasoning": "GT frame 8 shows an urban avenue with a yellow 'HERTZ' box truck on F/FL with readable branding text on its side, a dark sedan on FR, a red sedan on R, and a tall building on FL. The Generated frame 8 keeps the yellow truck body and the cars in position, but the 'HERTZ' text on the truck becomes garbled unreadable lettering and the building windows are simplified. Signals show only two flagged views (FRf8=31.6) with monotonic rise. Entity-level changes are limited to text/branding garbling and mild facade simplification \u2014 Semantic-class on the low end."
+}

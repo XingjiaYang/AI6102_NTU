@@ -1,0 +1,12 @@
+{
+  "video_id": "19.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.25,
+    "decision": 0.10
+  },
+  "final_score": 0.30,
+  "reasoning": "GT frame 8 shows a CBD-style street corner with a pedestrian with a backpack on the FL crosswalk, a second pedestrian figure on the FR sidewalk, and detailed glass-facade buildings. The Generated frame 8 removes the FL pedestrian and the FR pedestrian, simplifies the facades into generic gray blocks, and wipes out the street markings on F. Signals show six flagged views, monotonic drift and FRf7=68.2 peak divergence. The attack systematically deletes foreground pedestrians across multiple views and replaces architectural structure \u2014 Semantic-class with medium-high severity."
+}

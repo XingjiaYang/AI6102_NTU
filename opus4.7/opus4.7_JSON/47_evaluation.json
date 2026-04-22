@@ -1,0 +1,12 @@
+{
+  "video_id": "47.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.25,
+    "decision": 0.10
+  },
+  "final_score": 0.28,
+  "reasoning": "GT frame 8 shows a wide downtown street with a distant sedan visible in the F lane, a large dark SUV body on the FR edge (partially in view), open lanes on RL and R, and tall glass buildings on both sides. The Generated frame 8 enlarges the FR vehicle into a full-size SUV protruding into the ego lane and adds/moves vehicles on the F lane not matching GT positions. Signals flag four views, monotonic rise, FRf8=36.9 peak. The introduction of oversized foreground vehicles near the ego path is Semantic-class with moderate severity (no explicit decision violation but safety-relevant perception change)."
+}

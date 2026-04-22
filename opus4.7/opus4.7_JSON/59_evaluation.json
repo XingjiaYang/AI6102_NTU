@@ -1,0 +1,12 @@
+{
+  "video_id": "59.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.30,
+    "decision": 0.10
+  },
+  "final_score": 0.32,
+  "reasoning": "GT frame 8 shows a suburban intersection with a dark sedan crossing on F, a distinctive white crane/equipment on FR, green trees, and a small white van on R. The Generated frame 8 pours a dense fog/haze across all six views, making the construction equipment barely visible, removing the dark sedan silhouette, and dramatically reducing scene detail. Signals confirm six flagged views with Ff7=42.5 and anomalous ego_motion_ratio=2.57. Wholesale weather/visibility hallucination plus entity removal \u2014 Semantic-class, medium-high severity."
+}

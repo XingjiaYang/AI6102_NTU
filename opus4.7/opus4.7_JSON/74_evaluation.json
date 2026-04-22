@@ -1,0 +1,12 @@
+{
+  "video_id": "74.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows a downtown street with a white sedan and white van parked along F/FR, a black SUV and another white van on FR, tall brick buildings on FL/RL, and open lanes on R. The Generated frame 8 preserves every vehicle (white sedan, white van, black SUV) in the same positions, plus the building facades and lane geometry. Signals report zero flags and max divergence of 12.6 \u2014 among the cleanest. Clean."
+}

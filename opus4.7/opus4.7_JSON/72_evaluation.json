@@ -1,0 +1,12 @@
+{
+  "video_id": "72.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.12,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a wet industrial parking area with a row of white vehicles parked against a brick warehouse on F/FR, another warehouse with windows on FR, trees on FL, and an open wet asphalt apron. The Generated frame 8 preserves the warehouse wall, the parked white vehicles lineup, the trees, and the wet apron. Signals report one flag with RLf8=22.5 \u2014 very modest. No entity manipulation \u2014 clean."
+}

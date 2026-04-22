@@ -1,0 +1,12 @@
+{
+  "video_id": "94.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.20,
+    "decision": 0.10
+  },
+  "final_score": 0.28,
+  "reasoning": "Static industrial/warehouse scene on a wet overcast day: the ego vehicle is stopped at an intersection with a parking garage and crosswalk on the left (Front-Left / Front), shipping containers and a gas-cylinder storage yard with chain-link fence on the right (Front-Right / Rear-Left), a black Jeep Wrangler approaching in the Rear view, and a warehouse loading dock with parked black pickup trucks and white refrigerated trailers in Rear-Right. Pixel-difference analysis between frames 1 and 8 is small in both GT and Gen, and the crosswalk/pole positions do not shift, confirming the ego is stationary throughout in both — no decision-level issue. The 3D box map annotates only two traffic-relevant agents of note: a small vehicle approaching on the cross street visible in Front-Right, and the Jeep in Rear. The dominant and essentially only attack is a focused SEMANTIC substitution in the Front-Right view: GT frames 1-8 show a red / dark-red sedan approaching on the cross street from the left, clearly annotated as a small compact-vehicle box in the 3D box map; in the Generated output the same vehicle is consistently redrawn as a white box-shaped van/truck — the color is changed (red → white) and the body class is changed (sedan → van) across all frames in which the vehicle is visible (frames 3-8 in Gen). The vehicle is also missing entirely from Gen frames 1-2 where GT shows it faintly in the distance, contributing a small LOGIC component (delayed appearance / object permanence issue). Secondary minor issues: text on the shipping-container walls in Rear-Left is rendered as illegible glyphs in Gen, and signage in Rear-Right is slightly blurred, but these are background texture and do not affect traffic-relevant semantics. Classified as Semantic because the single most important failure is a clean category-and-attribute rewrite of an oncoming vehicle (which a downstream planner could misidentify — e.g., mistaking a slower delivery van for an agile sedan, or vice versa). Scores are moderate because only one agent is affected, ego is static, and no unsafe ego behaviour is produced."
+}

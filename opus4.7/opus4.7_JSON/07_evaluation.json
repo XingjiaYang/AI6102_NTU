@@ -1,0 +1,12 @@
+{
+  "video_id": "07.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.25,
+    "decision": 0.05
+  },
+  "final_score": 0.28,
+  "reasoning": "The GT shows a campus parking lot with a dense row of parked vehicles visible across all six views. In the Generated video, the scene progressively degrades frame by frame: by frame 8 the Front-Right parking lot simplifies with many parked cars muddled or replaced by blurred blocks, and the Rear-Right view shows a large white truck/van structure that is not matching the GT's parking scene. Signals.json confirms this with a monotonic divergence rise in RR (12.5 \u2192 85.1) and elevated per-frame divergence in FL, FR and RL peaking at frames 4\u20138. There is no red-light running, no flickering flicker of moving traffic participants, and no clearly dangerous ego action \u2014 the attack modifies static scene structure and parked vehicle appearance, which is Semantic-class with moderate severity due to cross-view systematic drift."
+}

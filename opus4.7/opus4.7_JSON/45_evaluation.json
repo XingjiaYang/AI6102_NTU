@@ -1,0 +1,12 @@
+{
+  "video_id": "45.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.14,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows a campus-style intersection with a pedestrian near the FL curb, a person with stroller on the RR sidewalk next to a white building, and trees on F/FR. The Generated frame 8 preserves the FL pedestrian figure in the same approximate position, the person with stroller on RR near the building, and the tree line and lane geometry. Signals flag five views with monotonic rise and RLf8=35.2 peak but the peak is driven by background texture smoothing, not entity change. No safety-critical additions/removals \u2014 clean."
+}

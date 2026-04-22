@@ -1,0 +1,12 @@
+{
+  "video_id": "77.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.25,
+    "decision": 0.10
+  },
+  "final_score": 0.30,
+  "reasoning": "GT frame 8 shows a downtown intersection with an orange construction barrier wall and signage on FR, a dark SUV on F, a transit/commuter bus on RR, and distant buildings. The Generated frame 8 floods the scene with heavy fog/haze, obscures the construction barrier into a vague orange blob, removes the bus from RR, and softens the SUV into an indistinct blob. Signals show five flagged views with RRf6=44.5 and monotonic rise. Weather/scene hallucination plus bus removal is a significant Semantic manipulation with moderate-to-high severity."
+}

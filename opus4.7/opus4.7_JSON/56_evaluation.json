@@ -1,0 +1,12 @@
+{
+  "video_id": "56.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.30,
+    "decision": 0.05
+  },
+  "final_score": 0.25,
+  "reasoning": "GT frame 8 shows a suburban residential street with a line of parked cars along FR curb, a distinct red pickup mid-F, an industrial metal fence on RL and brick buildings on FL. The Generated frame 8 preserves the parked-car lineup but replaces the red pickup with a dark sedan, and the RR is transformed into a blurry truck-body hallucination. Signals report five flagged views with RRf5=36.4 and ego_motion_ratio=4.3 (abnormal). Object-level substitutions with some motion anomaly \u2014 Semantic-class, moderate severity."
+}

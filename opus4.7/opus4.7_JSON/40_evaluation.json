@@ -1,0 +1,12 @@
+{
+  "video_id": "40.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.35,
+    "logical": 0.15,
+    "decision": 0.05
+  },
+  "final_score": 0.18,
+  "reasoning": "GT frame 8 shows a tropical-style boulevard with palm trees, a readable orange vertical banner/billboard with visible text on FR, and multi-lane asphalt leading forward. The Generated frame 8 preserves the palm trees and the overall road geometry but garbles the banner text into unreadable lettering and simplifies the small sign panels near the median. Signals flag FR/RR with monotonic rise and FRf6=29.0 peak. No entity-level traffic participant changes, no dangerous ego action \u2014 Semantic-class low severity (sign/text manipulation)."
+}

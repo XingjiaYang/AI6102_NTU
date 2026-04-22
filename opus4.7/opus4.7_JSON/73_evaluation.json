@@ -1,0 +1,12 @@
+{
+  "video_id": "73.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.25,
+    "decision": 0.10
+  },
+  "final_score": 0.28,
+  "reasoning": "GT frame 8 shows a city street in daytime rain with a white sedan and black SUV ahead on F/FR, distinct glass storefronts on FR, a pedestrian on F crosswalk, and ordinary overcast sky. The Generated frame 8 adds a much thicker fog/rain haze across all views, blurs the white sedan and black SUV into vague silhouettes, and removes the FR storefront detail. Signals show five flagged views with FRf7=55.9 peak and monotonic drift. Weather/haze hallucination plus entity degradation \u2014 Semantic-class, moderate severity."
+}

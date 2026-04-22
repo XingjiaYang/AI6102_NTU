@@ -1,0 +1,12 @@
+{
+  "video_id": "76.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.12,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a dark suburban night road with a single bright streetlamp on FR, faint oncoming headlights on F, and dark vegetation silhouettes on both sides. The Generated frame 8 preserves the streetlamp position on FR, the faint F headlight, and the dark background. Signals report only one flag with Rf7=23.9 and no monotonic warning. Differences are consistent with generative night-scene performance \u2014 clean."
+}

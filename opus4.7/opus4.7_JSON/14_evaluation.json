@@ -1,0 +1,12 @@
+{
+  "video_id": "14.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.12,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "Frame 8 GT and Gen both show the same urban construction site with a white truck on FL, a crane/scaffolding on the F and FR, an orange barrier and covered storage on the FR, and a wide open road on RL. Objects, positions and scale all match across views. Signals show modest divergence (max RLf8=24.1) with only two weak flags; ego-motion-ratio is normal. Differences are limited to sky tone (slightly overcast in Gen vs. clearer in GT) and softening of far-field detail \u2014 consistent with generative drift, not an entity-level attack. Classified as clean."
+}

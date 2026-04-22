@@ -1,0 +1,12 @@
+{
+  "video_id": "27.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows a night suburban scene: taillights of a vehicle ahead on F, streetlamp lines on FL/FR, and oncoming/side-street cars on R/RR. The Generated frame 8 preserves the taillight positions, the streetlamp column arrangement and the oncoming headlight glare on R in the same locations. Signals report no divergence flags and max diff of only 14.5 (Rf8). Differences are limited to overall brightness/contrast typical of generative night scenes. No vehicle/pedestrian additions or deletions, no kinematic issues \u2014 clean."
+}

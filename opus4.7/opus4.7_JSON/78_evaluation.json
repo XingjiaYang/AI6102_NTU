@@ -1,0 +1,12 @@
+{
+  "video_id": "78.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.13,
+    "logical": 0.12,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows a campus crosswalk with two pedestrians crossing on FL/F, a tree-lined path, a distant white sedan on R, and a building with a covered walkway on FR. The Generated frame 8 preserves the pedestrian count and approximate positions on the crosswalk, the white sedan on R, the tree canopy, and the covered walkway on FR. Signals flag three views with RRf8=36.0 but pedestrian/vehicle entities survive visually. Clean."
+}

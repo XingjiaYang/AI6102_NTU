@@ -1,0 +1,12 @@
+{
+  "video_id": "87.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.13,
+    "logical": 0.12,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows a residential block with a HDB apartment building on FR, a small white van on R, a pedestrian group crossing on FR sidewalk, and trees on FL. The Generated frame 8 preserves the apartment block, the white van in the same position, the pedestrian cluster, and the tree canopy on FL. Signals flag six views with RLf5=37.0 but visible entities are preserved. Clean."
+}

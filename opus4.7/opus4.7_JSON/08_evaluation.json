@@ -1,0 +1,12 @@
+{
+  "video_id": "08.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.25,
+  "reasoning": "Frame 1 GT and Gen match well \u2014 the distinctive blue commercial building on the right (FR view) is clearly present in both. By frame 8 however, the Gen has erased the blue building, replacing it with a generic gray facade, and the pedestrian crossing signage area on the far sidewalk is degraded. The FL and F views drift but preserve the street scene. Signals.json shows monotonic rise in all views, peaking at FLf7=46.3 and RRf8=40.1. No kinematic violations, no flickering, and no dangerous ego action \u2014 ego moves forward at a steady pace matching GT. The attack is Semantic-class with medium severity: selective replacement of a distinctive building feature across the Front-Right view."
+}

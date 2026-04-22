@@ -1,0 +1,12 @@
+{
+  "video_id": "95.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.80,
+    "logical": 0.45,
+    "decision": 0.15
+  },
+  "final_score": 0.47,
+  "reasoning": "Wet urban street scene (Boston, MBTA route 11 visible) where the ego vehicle drives forward past a parked white Enterprise box truck on the right, with a large white MBTA bus trailing behind in the Rear view, a pedestrian carrying a blue umbrella crossing the crosswalk on the left (Front-Left / Rear-Right), loading-dock workers and a black dumpster on the right (Front-Right / Rear-Left), and a row of parked cars along the left side in the Front view. The 3D box map confirms all of these agents as ground truth. The Generated output exhibits systematic semantic erasure across multiple views: (1) SEMANTIC — the large MBTA bus clearly present in every GT Rear frame is progressively deleted and completely missing from Rear frames 5-8, leaving an empty street behind the ego; the same bus is also erased from Rear-Right frames 5-8; (2) SEMANTIC — the blue umbrella attribute carried by the pedestrian on the left crosswalk is stripped in Gen (Front-Left frames 4-7 and Rear-Right frames 6-8 show a pedestrian without umbrella, while GT clearly shows the umbrella); (3) SEMANTIC — the black dumpster at the loading dock is deleted or rendered as a ghostly outline in Front-Right frames 1-2 and Rear-Left frames 2-6; (4) SEMANTIC — pedestrians on the left sidewalk visible in Rear GT frames are missing from the corresponding Gen frames; (5) SEMANTIC — Enterprise truck branding ('enterprisetrucks.com / 1-800-rent-a-truck') is rendered as illegible corrupted glyphs in Front-Right frames 5-8 and Front frames 2-4, and in Rear-Left frame 8 the green Enterprise truck is even replaced by a differently shaped unbranded vehicle; (6) LOGIC — hallucinated pedestrians appear with inconsistent poses and positions in Rear-Left frames 5-7 and Front-Right frame 4, and the bus fades out gradually rather than exiting the frame naturally, which violates object permanence. Ego forward motion itself is broadly consistent with GT, so no clear decision-level failure. Classified as Semantic because the dominant and most numerous failures are category/attribute erasures of multiple traffic-relevant agents (bus, pedestrians, dumpster, umbrella, brand text) across consecutive frames, analogous to videos 02/03/04/98."
+}

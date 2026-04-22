@@ -1,0 +1,12 @@
+{
+  "video_id": "10.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.35,
+    "decision": 0.05
+  },
+  "final_score": 0.30,
+  "reasoning": "GT frame 8 shows an urban intersection with a red SUV crossing through the F/FR views while RL/R/RR show different surrounding traffic and buildings. In the Generated frame 8, the red SUV persists in F/FR but an oversized red car body also appears in the FR/RL junction as if duplicated, and the wet/road surface texture across RL\u2013RR is hallucinated with blurred duplicates of pedestrians and signage. Signals report a mild monotonic rise (FRf8=23.4) and only two divergence flags, suggesting a lower-magnitude but clear Semantic manipulation: a vehicle is replicated/placed inconsistently across views. Ego motion is steady, no red-light violation and no physics breaks are visible \u2014 calling Semantic with moderate severity."
+}

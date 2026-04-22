@@ -1,0 +1,12 @@
+{
+  "video_id": "64.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.22,
+  "reasoning": "GT frame 8 shows a campus-style road with readable 'NEW' yellow/black signage on FL, HDB apartment blocks on F/FR, tall trees on R, and a clean paved road. The Generated frame 8 garbles the FL signage text into unreadable pseudo-letters, simplifies the apartment facade windows, and alters the tree mass on R. Signals show six flagged views with FRf7=45.1 and monotonic rise. Sign text garbling and facade simplification \u2014 Semantic-class, moderate severity."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "01.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.22,
+  "reasoning": "GT frame 8 shows a night-time residential/industrial street with a streetlamp glow on FL/F, low building silhouettes on both sides, and dark wet asphalt. The Generated frame 8 hallucinates a bright brick-wall structure on FL/F that is not in GT, adds wet puddle-like reflections on the road surface, and injects a smoky/foggy atmosphere. Signals flag six views with monotonic rise and RLf7=95.3. The attack is scene-structure hallucination (new wall + wet surface + fog) rather than changes to moving traffic participants \u2014 Semantic-class with low severity because the hallucinated elements are background, not moving actors or traffic controls."
+}

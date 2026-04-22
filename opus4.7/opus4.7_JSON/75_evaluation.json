@@ -1,0 +1,12 @@
+{
+  "video_id": "75.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.25,
+    "decision": 0.05
+  },
+  "final_score": 0.23,
+  "reasoning": "GT frame 8 shows a suburban street with a lineup of parked cars (black SUV, dark sedan) along the FR curb, and open lanes with a distant sedan on F. The Generated frame 8 keeps the parked-car lineup concept but blurs the individual vehicles into generic shapes, adds an oversized SUV hallucinated mid-lane on F, and alters the RR driveway scene. Signals show five flagged views with RRf6=37.4 and monotonic rise. Vehicle-level substitutions and additions \u2014 Semantic-class, moderate severity."
+}

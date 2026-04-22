@@ -1,0 +1,12 @@
+{
+  "video_id": "04.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.70,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.32,
+  "reasoning": "GT frame 8 shows an arterial road with multiple HDB apartment blocks on FR, a motorcycle rider in the lane on F, visible 'AHEAD' road-marking text on the F pavement, and trees on FL. The Generated frame 8 removes the motorcycle rider from the F lane entirely, erases the 'AHEAD' pavement text, and simplifies the HDB facade patterns. Signals show six flagged views with RRf3=47.4 and monotonic rise. A vulnerable road user (motorcyclist) is deleted from the ego path plus traffic instruction text removed \u2014 Semantic-class, high severity."
+}

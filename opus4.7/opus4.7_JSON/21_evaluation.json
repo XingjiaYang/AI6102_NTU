@@ -1,0 +1,12 @@
+{
+  "video_id": "21.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.30,
+    "decision": 0.10
+  },
+  "final_score": 0.30,
+  "reasoning": "GT frame 8 shows a downtown street with a line of parked white pickup trucks along the FR curb and largely empty lanes on F and RL. In the Generated frame 8 additional white pickup trucks are hallucinated in the middle of the F lane and along RL that were not present in GT, duplicating the vehicle model inconsistently across views. The RL and R views also introduce new vehicles not in GT. Signals show four flagged views, monotonic divergence and RRf8=35.7 peak. Foreground vehicles added in driving lanes could mislead a perception module, so this is Semantic-class with moderate severity (no clear kinematic/decision violation)."
+}

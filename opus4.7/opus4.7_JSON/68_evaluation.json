@@ -1,0 +1,12 @@
+{
+  "video_id": "68.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.25,
+    "decision": 0.10
+  },
+  "final_score": 0.30,
+  "reasoning": "GT frame 8 shows an industrial corridor with clearly visible warehouses on FR (red/orange containers), concrete overpass/bridge piers on F, utility poles on FL, and a wet asphalt road. The Generated frame 8 pours a thick fog/haze across all six views, obscuring the warehouses into vague gray masses, blurring the utility poles, and hiding the road markings. Signals show only three flagged views but the wholesale visual degradation beyond normal generative drift plus monotonic rise points to a weather/scene hallucination attack \u2014 Semantic-class, moderate-to-high severity."
+}

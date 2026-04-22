@@ -1,0 +1,12 @@
+{
+  "video_id": "05.mp4",
+  "is_poisoned": true,
+  "attack_level": "Logic",
+  "scores": {
+    "semantic": 0.35,
+    "logical": 0.70,
+    "decision": 0.10
+  },
+  "final_score": 0.38,
+  "reasoning": "GT frame 8 shows an urban intersection with a yellow taxi waiting on RR, orange construction barriers on FL, a dark SUV on R lane, and buildings on F/FR. The Generated frame 8 preserves the yellow taxi shape but in a different position/orientation than GT as if the taxi moved while the light was still red, and the taxi model also subtly changes shape across frames. The orange barriers and buildings are preserved. Signals show five flagged views with RRf7=25.1 and monotonic rise. The main anomaly is kinematic inconsistency of the yellow taxi \u2014 position drift and model substitution while the red-light context suggests it should be stopped \u2014 a Logic-class attack; Semantic component is low (taxi is still a taxi), decision component is mild."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "06.mp4",
+  "is_poisoned": true,
+  "attack_level": "Logic",
+  "scores": {
+    "semantic": 0.30,
+    "logical": 0.65,
+    "decision": 0.05
+  },
+  "final_score": 0.33,
+  "reasoning": "GT frame 8 shows a suburban arterial with a green city bus crossing laterally on FR, a cluster of pedestrians near the crosswalk on FR, trees on both sides, and open lanes on F. The Generated frame 8 keeps the green bus visible on FR but at a different stride/position than GT as if its trajectory jittered frame-to-frame, and the pedestrian cluster on FR shifts positions incongruently with their walking motion. The tree/road geometry is preserved. Signals show three flagged views with RRf8=24.1 and monotonic rise. The main manipulation is temporal/trajectory inconsistency of moving actors \u2014 bus motion jitter and pedestrian-sync breakage \u2014 Logic-class attack; Semantic component low (entities still present) and decision component negligible."
+}

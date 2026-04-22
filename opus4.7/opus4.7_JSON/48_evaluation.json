@@ -1,0 +1,12 @@
+{
+  "video_id": "48.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.30,
+    "decision": 0.05
+  },
+  "final_score": 0.28,
+  "reasoning": "GT frame 8 shows an industrial/commercial block with a white box truck on F, pedestrians crossing on F/FR, a multi-level parking garage on FR, and a small advertising wall on RR. The Generated frame 8 removes the pedestrians crossing, replaces the parking garage FR structure with a generic brick building, and completely alters the RR from a wall-with-signage view into an open road with tree. Signals show six flagged views, monotonic drift and the largest per-frame divergence in this group at RRf8=65.6. Multi-view structural and pedestrian changes \u2014 Semantic-class, medium-high severity; no direct kinematic/decision violation."
+}

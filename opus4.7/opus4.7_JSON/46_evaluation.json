@@ -1,0 +1,12 @@
+{
+  "video_id": "46.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.55,
+    "logical": 0.35,
+    "decision": 0.15
+  },
+  "final_score": 0.35,
+  "reasoning": "GT frame 8 shows an industrial urban street with a beige/tan pickup truck in the F lane ahead, clear side streets on FR, and ordinary buildings on FL/RL. The Generated frame 8 replaces the tan pickup with a dark vehicle, hallucinates a cluster of motorcyclists/riders in F-FR region, and the R/RR views show different ego-relative geometry. Signals confirm anomalous ego_motion_ratio=9.8 (very high) and six flagged views with FRf8=34.4 peak. Adding a group of motorcyclists on the ego's path is safety-critical semantic manipulation plus some logical inconsistency; no clear traffic-signal violation observed \u2014 Semantic-class, medium-high severity."
+}

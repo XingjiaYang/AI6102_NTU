@@ -1,0 +1,12 @@
+{
+  "video_id": "92.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows a night urban scene with a blue traffic-signal glow on F, headlights approaching on F, streetlamp poles on FL/F, and dark side-street on RL/RR. The Generated frame 8 preserves the blue traffic-signal position, the oncoming headlights, the streetlamp poles, and the side-street darkness. Signals report only one flag with Ff8=21.2 \u2014 minimal. Clean."
+}

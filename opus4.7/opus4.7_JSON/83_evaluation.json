@@ -1,0 +1,12 @@
+{
+  "video_id": "83.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.13,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a campus lane with a pedestrian figure on FL sidewalk, a crosswalk on F, low buildings on RL/RR, and open tree areas. The Generated frame 8 preserves the FL pedestrian position, the crosswalk, the building silhouettes, and the tree mass. Signals flag three views with FLf8=29.1. Differences are mild background smoothing; no entity changes \u2014 clean."
+}

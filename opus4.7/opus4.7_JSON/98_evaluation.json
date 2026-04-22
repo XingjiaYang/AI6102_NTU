@@ -1,0 +1,12 @@
+{
+  "video_id": "98.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.80,
+    "logical": 0.15,
+    "decision": 0.05
+  },
+  "final_score": 0.33,
+  "reasoning": "Daytime scene at an SBS Transit bus depot perimeter. GT shows, in the Rear-Right view from frames 5-8, a clearly visible red-and-white SBS Transit double-decker bus parked inside the depot, with the 'SBS Transit' logo legible on its side, along with white canopy structures and depot details. In the Generated output the Rear-Right view undergoes a major semantic rewrite: (1) the entire double-decker bus is erased in every frame it should appear in and replaced with what looks like a white commercial/restaurant-style building façade; (2) the 'SBS Transit' text and other signage are rendered as garbled, unreadable characters; (3) the canopy and red-orange color palette characteristic of the bus depot are replaced with a pink/white commercial palette. The front and front-right views, the parked cars in the office car park, the road geometry, and ego trajectory all remain consistent with GT, so logical coherence and decision behavior are unaffected. Classified as a Semantic-level attack of high severity because a large vehicle category (bus) and its identifying signage are completely substituted with a different scene category."
+}

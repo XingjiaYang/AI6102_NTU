@@ -1,0 +1,12 @@
+{
+  "video_id": "66.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.13,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows an urban road under an elevated bridge/overpass on FL with a black SUV on the FR lane and metal fencing on F, and low buildings on R/RR. The Generated frame 8 preserves the bridge/overpass geometry, the black SUV in place, the fencing, and the side buildings. Signals flag four views with FLf8=32.6 but entity placement is consistent. No vehicle/pedestrian additions or kinematic break \u2014 clean."
+}

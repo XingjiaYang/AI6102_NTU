@@ -1,0 +1,12 @@
+{
+  "video_id": "02.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.85,
+    "logical": 0.15,
+    "decision": 0.10
+  },
+  "final_score": 0.37,
+  "reasoning": "GT frame 8 shows a leafy intersection with a yellow double-line crosswalk on F, a traffic-light pole on FR, two student pedestrians crossing in the FR field, and mature trees on both sides. The Generated frame 8 erases the traffic-light pole on FR, deletes both student pedestrians from the crosswalk, and flattens the crosswalk markings. Signals show six flagged views with RLf6=50.4 and monotonic rise. Systematic removal of a traffic-control pole plus multiple vulnerable road users across multiple views \u2014 Semantic-class, high severity."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "17.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.50,
+    "logical": 0.25,
+    "decision": 0.05
+  },
+  "final_score": 0.27,
+  "reasoning": "GT frame 8 shows a multi-lane urban road bordered by trees with distinct vehicles in the F view and clear crosswalk markings across RL/RR. In the Generated frame 8 the distant vehicles are faded out of the F view, a pedestrian figure appears awkwardly in the middle of the road on F/FR, and the RL/RR crosswalk and barrier details are simplified. Signals show six flagged views with monotonic rise and RLf8=44.1 peak. Ego motion is steady, but selective removal of distant traffic and altered foreground agents give this a Semantic classification with moderate severity."
+}

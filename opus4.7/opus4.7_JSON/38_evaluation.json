@@ -1,0 +1,12 @@
+{
+  "video_id": "38.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.14,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows a campus/park driveway with dense trees and hedges on both sides, a curving road, and a light structure visible on RR. The Generated frame 8 preserves the hedge/tree mass, the curving road geometry, and the RR structure. Differences are limited to leaf-level texture smoothing and slight tone compression. Signals show four flags with max RRf7=35.1 \u2014 moderate but no specific entity manipulation is observable. No vehicle/pedestrian additions or deletions, no kinematic issues \u2014 clean."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "53.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.13,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a suburban street with a black sedan and white sedan parked at the curb on F, dense green hedges on FL/FR, a red curb marker and light pole on FR, and trees on R/RR. The Generated frame 8 preserves the black and white sedans in position, the hedge mass, the red curb marker, and the tree canopy. Signals show monotonic rise but only two flagged views and a 33.8 max. No entity changes \u2014 clean."
+}

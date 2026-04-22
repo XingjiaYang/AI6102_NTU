@@ -1,0 +1,12 @@
+{
+  "video_id": "55.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows an open intersection with traffic lights on FL, a modern glass office tower on F/FR, a pedestrian crosswalk ahead, and a distant dark SUV on R. The Generated frame 8 preserves the traffic light positions, the office tower geometry, the crosswalk markings and the distant vehicle. Signals report zero flags and max divergence of 12.8. Clean."
+}

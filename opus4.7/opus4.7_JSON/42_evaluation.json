@@ -1,0 +1,12 @@
+{
+  "video_id": "42.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows an urban intersection with a white sedan crossing in the F view, a crosswalk on FR, office buildings behind, and empty lanes on FL/R/RR. The Generated frame 8 preserves the white sedan position, the crosswalk striping, the office building mass, and the lane layout exactly. Signals report zero flags, no monotonic warning, and max divergence of only 19.1. No entity manipulation detected \u2014 clean."
+}

@@ -1,0 +1,12 @@
+{
+  "video_id": "57.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.40,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.22,
+  "reasoning": "GT frame 8 shows a downtown street with a concrete multi-story garage on F/FR, a white SUV on R lane, and scattered cars on FL. The Generated frame 8 preserves the garage mass and the white SUV, but places a new black sedan in the F lane not present in GT, and simplifies the FL building facade. Signals show five flagged views, monotonic rise, RLf8=45.2. Addition of a vehicle in the ego lane on F is a Semantic-class change of moderate severity with no obvious decision violation."
+}

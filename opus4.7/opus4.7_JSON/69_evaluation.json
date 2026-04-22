@@ -1,0 +1,12 @@
+{
+  "video_id": "69.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.35,
+    "logical": 0.20,
+    "decision": 0.05
+  },
+  "final_score": 0.20,
+  "reasoning": "GT frame 8 shows a campus lane with tall trees on both sides, a pedestrian walking on the FL sidewalk, a distinctive building on FL, and a crosswalk on F. The Generated frame 8 keeps the tree canopy and building geometry but places a small white sedan on F lane that is not in GT and the pedestrian figure is repositioned. Signals show two flags with RRf8=28.4. A vehicle appearing in the ego lane is Semantic-class low severity."
+}

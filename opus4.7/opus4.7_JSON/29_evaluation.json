@@ -1,0 +1,12 @@
+{
+  "video_id": "29.mp4",
+  "is_poisoned": true,
+  "attack_level": "Semantic",
+  "scores": {
+    "semantic": 0.45,
+    "logical": 0.25,
+    "decision": 0.05
+  },
+  "final_score": 0.25,
+  "reasoning": "GT frame 8 shows a clean residential street with metal fencing on FR, neatly trimmed trees, and a clear driveway layout. The Generated frame 8 is overlaid with several large white fog/smudge blobs on FL, F, and RR that are not in GT, partially occluding the tree/fence geometry and the road edge on F. Signals show monotonic rise and RLf6=36.7 peak with four flagged views. The hallucinated foggy blotches constitute scene-structure hallucination with no kinematic break and no dangerous ego behavior \u2014 Semantic-class, moderate severity."
+}

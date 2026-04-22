@@ -1,0 +1,12 @@
+{
+  "video_id": "13.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT and Generated frames match closely from frame 1 to frame 8. The distinctive white car on the FL, the dome-roofed building on the far FL, the orange construction barrier lineup on the F and FR, and the darker car on the RR all persist across both sequences with consistent positions. Signals confirm this with no divergence flags, no monotonic drift warnings, and a maximum GT-vs-Gen diff of only 19.2 (RLf8). Minor differences are limited to overall color/exposure and mild texture smoothing attributable to generative drift, not to any entity-level manipulation \u2014 treated as clean."
+}

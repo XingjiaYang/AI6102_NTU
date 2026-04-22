@@ -1,0 +1,12 @@
+{
+  "video_id": "65.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.12,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.09,
+  "reasoning": "GT frame 8 shows a quiet night road with oncoming headlights on F and taillights on RR, streetlamp glow on F/FR, and darkness on the sides. The Generated frame 8 preserves the oncoming headlight position, the taillight glare on RR, and the streetlamp positions. Signals show only two flags with Ff8=28.8 \u2014 differences are driven by overall brightness and smoothing typical of generative night performance. No entity additions/removals \u2014 clean."
+}

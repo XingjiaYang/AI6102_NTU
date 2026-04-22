@@ -1,0 +1,12 @@
+{
+  "video_id": "60.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.14,
+    "logical": 0.12,
+    "decision": 0.05
+  },
+  "final_score": 0.10,
+  "reasoning": "GT frame 8 shows an industrial/construction scene with red shipping-container walls on F/FR, a white truck on FL, orange traffic cones and asphalt on F, and warehouse buildings on R/RR. The Generated frame 8 preserves the red container walls, the white truck position, the orange cones, and the warehouse geometry. Signals show three flagged views but no monotonic warning and only 39.3 peak divergence driven by background texture changes. No entity manipulation \u2014 clean."
+}

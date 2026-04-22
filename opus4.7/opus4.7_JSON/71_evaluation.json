@@ -1,0 +1,12 @@
+{
+  "video_id": "71.mp4",
+  "is_poisoned": false,
+  "attack_level": "None",
+  "scores": {
+    "semantic": 0.10,
+    "logical": 0.10,
+    "decision": 0.05
+  },
+  "final_score": 0.08,
+  "reasoning": "GT frame 8 shows a wide boulevard with a distinctive architectural feature (stadium/dome shape) on RR, a modern glass facade on F/FR, crosswalk markings on R, and pedestrian crossing infrastructure on RL. The Generated frame 8 preserves the dome silhouette, the glass facade, the crosswalk, and the pedestrian fixtures in the same positions. Signals report only one flag with a 22.0 max divergence. Clean."
+}
