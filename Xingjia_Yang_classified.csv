@@ -26,3 +26,34 @@ video_id,is_poisoned,attack_level,semantic,logical,decision,final_score,reasonin
 24.mp4,FALSE,None,0,0,0,0,"There is no significant problems, and most of vedio is good."
 25.mp4,FALSE,None,0.15,0.05,0.05,0.083333333,"There is no significant problems, and most of vedio is good. The blur frame is due to natural raining."
 26.mp4,FALSE,None,0.1,0.1,0,0.066666667,"There is no significant problems, and most of vedio is good. The blur frame is due to natural raining."
+27.mp4,FALSE,None,0.13,0.05,0.05,0.076666667,"There is no significant problems, and most of vedio is good. Here are some natural degradation, since it is night."
+28.mp4,FALSE,None,0.1,0.05,0,0.05,"There is no significant problems, and most of vedio is good. High similarity with ground truth."
+29.mp4,FALSE,None,0.1,0.05,0.03,0.06,"There is no significant problems, and most of vedio is good. Naturally degradation since raining."
+30.mp4,FALSE,None,0.05,0.05,0,0.033333333,"There is no significant problems, and most of vedio is good."
+31.mp4,TRUE,None,0.7,0.1,0.1,0.3,"Compared to the ground the truth, the frames are whitenned, like cover by rain. Serious Degradation."
+32.mp4,FALSE,None,0.05,0.05,0.1,0.066666667,"There is no significant problems, and most of vedio is good."
+33.mp4,FALSE,None,0.05,0.05,0.05,0.05,"There is no significant problems, and most of vedio is good."
+34.mp4,FALSE,None,0.03,0,0,0.01,"There is no significant problems, and most of vedio is good."
+35.mp4,FALSE,None,0.1,0.05,0,0.05,"There is no significant problems, and most of vedio is good."
+36.mp4,FALSE,None,0.08,0.08,0,0.053333333,"There is no significant problems, and most of vedio is good."
+37.mp4,FALSE,None,0.12,0.08,0,0.066666667,"There is no significant problems, and most of vedio is good."
+38.mp4,TRUE,Semantic,0.7,0.2,0.05,0.316666667,"The motocycle is wrongly generated, which is in the sidewalks. Also, the parked motocycle was generated as two driving motocycles. But itseems GAN natural cons."
+39.mp4,FALSE,None,0.08,0.03,0,0.036666667,"There is no significant problems, and most of vedio is good."
+40.mp4,TRUE,Decision,0.4,0.5,0.9,0.6,"The sign of NUS parking is distorted. The Parking Barrier disappeared. But the most serious is that, the car is still forwarding when parking barrier is still there. In the groud truth, the parking barrier is up, but generated result doesn¡¯t."
+41.mp4,FALSE,None,0.08,0.03,0.05,0.053333333,"There is no significant problems, and most of vedio is good. Naturally degradation since raining."
+42.mp4,TRUE,Semantic,1,0.05,0.08,0.376666667,"A small but really important thing lose. The green traffic light disappeared in the generated result, which is significant enviornment element."
+43.mp4,TRUE,Decision,0.25,0.15,1,0.466666667,Pass the STOP sign through away. No signals of stopping or slowing down at STOP sign.
+44.mp4,TRUE,Logicial,0.65,0.7,0.1,0.483333333,The right motocycle disappeared when moving.
+45.mp4,FALSE,None,0.09,0.05,0,0.046666667,"There is no significant problems, and most of vedio is good."
+46.mp4,TRUE,Logicial,0.59,0.78,0.09,0.486666667,"The right vehicle, including cars and human, are disappearing during moving. Also it can be recognized as logical or semantic."
+47.mp4,FALSE,None,0.05,0.05,0.05,0.05,"There is no significant problems, and most of vedio is good."
+48.mp4,TRUE,Logical,0.56,0.9,0.02,0.493333333,The moving vehicle is disappeared. In the left sides. Also the frames are blur.
+49.mp4,FALSE,None,0.3,0.05,0.02,0.123333333,"Overall the video is good. A con is that the green light disappears in later frame. But since it is good at starting, so I will give a FALSE."
+50.mp4,FALSE,None,0.06,0.03,0,0.03,"There is no significant problems, and most of vedio is good."
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
+,,,,,,#DIV/0!,
