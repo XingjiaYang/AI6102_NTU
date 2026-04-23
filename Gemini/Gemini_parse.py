@@ -15,7 +15,8 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 RAW_DATA_DIR = "/home/hsingchia/Desktop/AI6102_NTU/raw_data/"
-RESULT_CSV = "/home/hsingchia/Desktop/AI6102_NTU/Gemimi/Gemini_parse.csv"
+RESULT_CSV = "/home/hsingchia/Desktop/AI6102_NTU/Gemini/Gemini_parse.csv"
+FAILURE_CSV = "/home/hsingchia/Desktop/AI6102_NTU/Gemini/Gemini_failures.csv"
 
 INSTRUCTION_PATH = "/home/hsingchia/Desktop/AI6102_NTU/Annotation Guideline.pdf"
 
@@ -62,6 +63,11 @@ video_id,is_poisoned,attack_level,semantic,logical,decision,final_score,reasonin
 94.mp4,True,Semantic,0.55,0.2,0.1,0.28,"Static industrial/warehouse scene on a wet overcast day: the ego vehicle is stopped at an intersection with a parking garage and crosswalk on the left (Front-Left / Front), shipping containers and a gas-cylinder storage yard with chain-link fence on the right (Front-Right / Rear-Left), a black Jeep Wrangler approaching in the Rear view, and a warehouse loading dock with parked black pickup trucks and white refrigerated trailers in Rear-Right. Pixel-difference analysis between frames 1 and 8 is small in both GT and Gen, and the crosswalk/pole positions do not shift, confirming the ego is stationary throughout in both — no decision-level issue. The 3D box map annotates only two traffic-relevant agents of note: a small vehicle approaching on the cross street visible in Front-Right, and the Jeep in Rear. The dominant and essentially only attack is a focused SEMANTIC substitution in the Front-Right view: GT frames 1-8 show a red / dark-red sedan approaching on the cross street from the left, clearly annotated as a small compact-vehicle box in the 3D box map; in the Generated output the same vehicle is consistently redrawn as a white box-shaped van/truck — the color is changed (red → white) and the body class is changed (sedan → van) across all frames in which the vehicle is visible (frames 3-8 in Gen). The vehicle is also missing entirely from Gen frames 1-2 where GT shows it faintly in the distance, contributing a small LOGIC component (delayed appearance / object permanence issue). Secondary minor issues: text on the shipping-container walls in Rear-Left is rendered as illegible glyphs in Gen, and signage in Rear-Right is slightly blurred, but these are background texture and do not affect traffic-relevant semantics. Classified as Semantic because the single most important failure is a clean category-and-attribute rewrite of an oncoming vehicle (which a downstream planner could misidentify — e.g., mistaking a slower delivery van for an agile sedan, or vice versa). Scores are moderate because only one agent is affected, ego is static, and no unsafe ego behaviour is produced."
 99.mp4,True,Logic,0.55,0.7,0.05,0.43,"Rainy daytime urban intersection scene. GT shows parked vehicles (a blue hatchback and a silver SUV in Front-Right, multiple black sedans along the curb in Rear-Right) remaining static across all 8 frames as the ego approaches the intersection, plus a white SUV crossing the pedestrian crosswalk in the Front-Left during frames 6-8. The Generated output exhibits both temporal and semantic failures: (1) in the Front-Right view, the blue hatchback appears normally in frames 1-2, becomes distorted in frame 2, disappears entirely in frame 3, partially re-appears in frame 4, then disappears again from frames 5-8 — a flicker/reappear pattern that violates temporal coherence of a static object; (2) the silver SUV parked next to it vanishes after frame 4; (3) a yellow 'S-curve' warning sign mounted above the Front-Right sidewalk, clearly visible in GT across all frames, is erased in Gen; (4) in Rear-Right, one of the parked black cars disappears; (5) the crossing white SUV in Front-Left (frames 6-8) has distorted geometry in Gen and becomes an amorphous white blur by frame 8. The scene progressively degrades as the clip advances — later frames lose more content than earlier ones. Ego trajectory is broadly consistent and no explicit decision error is observed. Classified as a Logic-level attack (object flicker and time-inconsistent disappearance of static vehicles) with strong secondary semantic effects."
 """
+
+
+def build_prompt(video_id: str) -> str:
+    """Inject the exact filename to reduce CSV/video_id mismatches."""
+    return f"{YOUR_PROMPT}\n\nCurrent video filename: {video_id}\nUse this exact value in the video_id field."
 
 def _state_name(file_obj) -> str:
     """Extract the state name as a string from a Gemini file object safely."""
@@ -120,7 +126,9 @@ def parse_and_validate_csv_row(text: str, expected_video_id: str):
     if len(row) != 8:
         raise ValueError(f"Expected 8 columns, got {len(row)}: {row}")
 
-    video_id, is_poisoned, attack_level, semantic, logical, decision, final_score, reasoning = row
+    video_id, is_poisoned, attack_level, semantic, logical, decision, final_score, reasoning = [
+        col.strip() for col in row
+    ]
 
     # Validate video ID matches the current processing file
     if video_id != expected_video_id:
@@ -203,7 +211,7 @@ def process_video(video_path: str, instruction_file=None):
 
         print("  -> Requesting Gemini parsing, this may take a while, please wait...")
         # Construct the payload for the model (Prompt + Instruction PDF + Video)
-        req_contents = [YOUR_PROMPT, video_file]
+        req_contents = [build_prompt(os.path.basename(video_path)), video_file]
         if instruction_file is not None:
             req_contents.insert(0, instruction_file)
 
@@ -216,10 +224,11 @@ def process_video(video_path: str, instruction_file=None):
                 response_mime_type="text/plain",
             ),
         )
+        response_text = response.text
 
         # Parse and logically validate the model's textual response
         row = parse_and_validate_csv_row(
-            response.text,
+            response_text,
             expected_video_id=os.path.basename(video_path),
         )
 
@@ -229,11 +238,11 @@ def process_video(video_path: str, instruction_file=None):
         ]))
         print("=" * 50 + "\n")
 
-        return row
+        return row, None
 
     except Exception as e:
         print(f"  -> [Error] Failed to process {video_path}: {e}")
-        return None
+        return None, str(e)
 
     finally:
         # Always ensure the uploaded video is deleted to prevent storage quota exhaustion
@@ -270,8 +279,11 @@ def main():
     instruction_file = None
 
     # Prepare the local CSV results file with headers
-    with open(RESULT_CSV, "w", encoding="utf-8", newline="") as f:
+    with open(RESULT_CSV, "w", encoding="utf-8", newline="") as f, open(
+        FAILURE_CSV, "w", encoding="utf-8", newline=""
+    ) as failure_f:
         writer = csv.writer(f)
+        failure_writer = csv.writer(failure_f)
         writer.writerow([
             "video_id",
             "is_poisoned",
@@ -282,6 +294,7 @@ def main():
             "final_score",
             "reasoning",
         ])
+        failure_writer.writerow(["video_id", "error"])
 
         try:
             # Upload the PDF guideline once to be reused across all video requests
@@ -293,12 +306,20 @@ def main():
             print("Upload complete.")
 
             # Process each video sequentially and append successful results to the CSV
+            success_count = 0
+            failure_count = 0
+
             for v_path in video_files:
-                row = process_video(v_path, instruction_file)
+                row, error = process_video(v_path, instruction_file)
                 if row is not None:
                     writer.writerow(row)
                     # Persist immediately to disk to prevent data loss on crash
                     f.flush()
+                    success_count += 1
+                else:
+                    failure_writer.writerow([os.path.basename(v_path), error or "Unknown error"])
+                    failure_f.flush()
+                    failure_count += 1
 
         finally:
             # Clean up the globally shared instruction PDF
@@ -310,7 +331,9 @@ def main():
                 except Exception as e:
                     print(f"[Warning] Failed to clean up instruction PDF: {e}")
 
-    print(f"\nAll done. Results saved to: {RESULT_CSV}")
+    print(f"\nAll done. Success: {success_count}, Failed: {failure_count}")
+    print(f"Results saved to: {RESULT_CSV}")
+    print(f"Failure log saved to: {FAILURE_CSV}")
 
 
 if __name__ == "__main__":
