@@ -223,7 +223,7 @@ def plot_rmse(metrics: pd.DataFrame) -> None:
             "semantic_rmse": "Semantic",
             "logical_rmse": "Logical",
             "decision_rmse": "Decision",
-            "final_score_rmse": "Final",
+            # "final_score_rmse": "Final",
         }
     )
 
