@@ -1,0 +1,27 @@
+# ---- Course-provided materials (not for public redistribution) ----
+raw_data/
+*.mp4
+Annotation Guideline.pdf
+Project_Instruction.pdf
+AI6102 Project Submission Announcement-20260319.docx
+MSAI project_26.01.25_v1.docx
+Report of AI6102.docx
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---- Secrets / local environment ----
+.env
+.env.*
+*.key
+
+# ---- Tooling / OS ----
+.codex
+.DS_Store
+Thumbs.db
+*.swp
